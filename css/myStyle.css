@@ -1,13 +1,89 @@
-.row-grey {
-	background-color: lightgrey;
+p {
+    color: #3B4242;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Animations */
+.hand-wave {
+    margin-bottom: 1rem;
+    animation-name: wave-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg); }
+    10% { transform: rotate(-10.0deg); }
+    20% { transform: rotate( 12.0deg); }
+    30% { transform: rotate(-10.0deg); }
+    40% { transform: rotate(  9.0deg); }
+    50% { transform: rotate(  0.0deg); }
+    100% { transform: rotate(  0.0deg); }
+}
+
+.row-blue {
+	background-color: dodgerblue;
 	-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 	clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 	padding: 65px 10px;
 }
 
 .row-white {
-	/*background-color: lightgrey;*/
-	/*-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);*/
-	/*clip-path: polygon(0 8%, 100% 4%, 100% 96%, 0% 100%);*/
 	padding: 65px 10px;
+}
+
+.footer {
+    padding: 65px 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    text-align: end;
+}
+
+.link-spacing {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.column {
+    background-color: ghostwhite;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.skills {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.skills-title {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.skills-text {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.job-experience {
+    margin-bottom: 1rem;
+}
+
+.job-company {
+    margin-top: -1rem;
+}
+
+.job-date {
+    font-size: small;
+    text-align: end;
 }
