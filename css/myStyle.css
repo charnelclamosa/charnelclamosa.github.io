@@ -16,7 +16,7 @@ a {
 }
 
 .about-me-animation {
-    transform: translateX(-10em) rotateZ(0deg);
+    transform: translateX(-2em) rotateZ(0deg);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
     opacity: 0;
     will-change: transform, opacity;
@@ -28,7 +28,7 @@ a {
 }
 
 .skills-animation {
-    transform: translateY(10em) rotateZ(0deg);
+    transform: translateY(2em) rotateZ(0deg);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
     opacity: 0;
     will-change: transform, opacity;
@@ -40,7 +40,7 @@ a {
 }
 
 .experience-animation {
-    transform: translateX(8em) rotateZ(0deg);
+    transform: translateX(2em) rotateZ(0deg);
     transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
     opacity: 0;
     will-change: transform, opacity;
