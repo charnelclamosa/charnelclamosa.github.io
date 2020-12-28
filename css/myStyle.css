@@ -85,6 +85,9 @@ a {
 .bold-text {
     font-weight: bold;
 }
+.italic-text {
+    font-style: italic;
+}
 .skills {
     margin-top: 10%;
     margin-bottom: 10%;
