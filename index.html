@@ -3,162 +3,97 @@
     <head class="show-on-scroll">
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
         <!-- My CSS -->
         <link rel="stylesheet" href="css/myStyle.css">
-
         <!-- Icon -->
         <link rel="icon" href="icon.ico" type="image/png">
-
         <title>Charnel Clamosa | Web Developer</title>
     </head>
-    <body>
+    <body class="bg-dark">
         <!-- Back to top button -->
-        <img src="images/back-to-top.png" height="50" class="back-to-top" id="goTop" onclick="goTop()">
+        <button type="button" class="back-to-top btn btn-outline-light btn-sm" id="goTop" onclick="goTop()"><i class="bi bi-arrow-up-circle"></i></button>
         <div>
             <!-- Landing page -->
-            <div class="row-white">
-                <div class="text-center" style="margin-top: 10vh;">
-                    <div class="text-dark" style="margin-bottom: 7rem;">
-                        <samp class="display-2">Hello!<img src="images/wave.png" height="75" class="hand-wave"></samp>
+            <section class="light-row">
+                <div class="text-center container-fluid">
+                    <div class="text-light mt-5">
+                        <samp class="display-1">Hello!<img src="images/wave.png" height="75" class="hand-wave"></samp>
                     </div>
-                    <div class="text-dark" style="margin-bottom: 7rem; margin-right: 20%; margin-left: 20%;">
-                        <samp class="h4">I'm <span class="bold-text" style="font-size: xx-large;">Charnel Clamosa</span>, a web developer that likes to bring creative ideas into web browsers<img src="images/male-technologist.png" height="40" style="margin-bottom: 1rem;"></samp>
+                    <div class="text-light my-1">
+                        <samp class="h2">I'm Charnel Clamosa</samp>
                     </div>
-                    <div class="text-secondary">
-                        <samp class="h5 ">Drop me a line <img src="images/e-mail.png" height="40" style="margin-bottom: 5px;">: <a href="mailto:charnel.clamosa16@gmail.com">charnel.clamosa16@gmail.com</a></samp>
+                    <div class="text-light my-1">
+                        <samp class="h3">Fullstack web developer</samp>
                     </div>
+                    <div class="text-light my-1">
+                        <samp><img src="images/male-technologist.png" height="50px"></samp>
+                    </div>
+                    <div class="text-light mt-5">
+                        <a href="mailto:charnel.clamosa16@gmail.com"><button type="button" class="btn btn-outline-light btn-lg" ><i class="bi bi-envelope"></i></button></a>
+                        <a href="https://github.com/charnelclamosa" target="_blank"><button type="button" class="btn btn-outline-light btn-lg mx-3"><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/charnel-clamosa-469aab141/" target="_blank"><button type="button" class="btn btn-outline-light btn-lg"><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+
                 </div>
-            </div>
+            </section>
             <!-- About me -->
-            <div class="row-blue">
-                <div class="row shadow-lg card-group my-1 about-me-animation show-on-scroll" style="margin-right: 15%; margin-left: 15%;">
-                    <div class="column col-sm-3 card text-center">
-                        <div class="card-body">
-                            <span class="bold-text h5" style="color: dodgerblue;">About me</span>
-                        </div>
+            <section class="dark-row">
+                <div class="container-fluid text-center">
+                    <img src="./images/profile.jpg" class="img-thumbnail shadow profile-picture" />
+                    <div class="card about-first-card shadow about-me-content pb-2">
+                        <h1 class="mx-5 text-dark"><strong>Charnel S. Clamosa</strong></h1>
+                        <h5 class="text-secondary">Fullstack web developer from Philippines</h5>
                     </div>
-                    <div class="column col-sm-9 card text-justify">
-                        <div class="card-body">
-                            <p>I'm a Programmer at <span class="bold-text">HRD Singapore, PTE. LTD</span>, I <span class="italic-text">design, develop and maintain in-house systems and its database</span>. I graduated in <span class="bold-text">Cavite State University</span> with a degree of <span class="italic-text">Bachelor of Science in Information Technology</span>.</p>
-                            <p>As a programmer, I always look to simplify or lessen the work needed for a process of something. I'm designing and creating web based systems most of the time when I'm at work but sometimes I debug systems and provide user support. My goal is to be proficient in front-end and back-end development, a full stack developer in other words.</p>
-                            <p><span class="bold-text">When I'm not at work</span>, I probably playing basketball, hanging out with my friends or riding my motorcycle.</p>
+                    <div class="row container-fluid mt-3 justify-content-center" style="margin-left: 1px;">
+                        <div class="col-4 card text-start">
+                            <h5 class="pt-2"><strong>Intro</strong></h5>
+                            <p><i class="bi bi-book"></i><small class="ms-2">Studied at <strong><a href="https://cvsu.edu.ph/" target="_blank" class="text-dark">Cavite State University</a></strong></small></p>
+                            <p><i class="bi bi-briefcase"></i><small class="ms-2">Programmer at <strong><a href="http://www.hrd-s.com/index.html" target="_blank" class="text-dark">HRD Singapore Pte. Ltd.</a></strong></small></p>
+                            <p><i class="bi bi-briefcase"></i><small class="ms-2">Worked as a Content Analyst at <strong><a href="https://www.spi-global.com/" target="_blank" class="text-dark">SPi Global</a></strong></small></p>
+                            <p><i class="bi bi-briefcase"></i><small class="ms-2">Worked as a Research Specialist at <strong><a href="https://www.taskus.com/" target="_blank" class="text-dark">TaskUs</a></strong></small></p>
+                            <p><i class="bi bi-house-door"></i><small class="ms-2">Lives in <strong><a href="https://www.google.com/maps/place/Sanja+Mayor,+Tanza,+Cavite/@14.3734024,120.8356819,14z/data=!3m1!4b1!4m5!3m4!1s0x33962b7906a4a769:0x4032ed09ebcb3568!8m2!3d14.373178!4d120.8527655" target="_blank" class="text-dark">Tanza, Cavite</a></strong></small></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Skills -->
-            <div class="row-white">
-                <div class="text-center row shadow-lg card-group my-1 skills-animation show-on-scroll" style="margin-left: 5%; margin-right: 5%;">
-                    <div class="column col-sm-4 card">
-                        <div class="card-body skills">
-                            <img src="images/front-end.png" height="100">
-                            <h5 class="card-title skills-title">Front-end</h5>
-                            <p class="skills-text">I like to build web based systems with a neat and simple look at the same time having a good UI/UX design.</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Front-end technologies that I use:</p>
-                            <p>HTML5, CSS3, JavaScript</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Frameworks and UI libraries:</p>
-                            <ul class="list-unstyled">
-                                <li>Vue.js</li>
-                                <li>Bootstrap</li>
-                                <li>Vuetify</li>
-                                <li>Element</li>
+                        <div class="col-6 card text-start ms-2">
+                            <h5 class="text-start pt-2"><strong>Technologies</strong></h5>
+                            <p><i class="fas fa-desktop"></i></i><span class="ms-1"><strong>Front-end</strong></span></p>
+                            <ul class="list-inline list-unstyled h5 ms-2" style="margin-top: -1%;">
+                                <li class="list-inline-item"><i class="fab fa-html5 mx-1" style="color: #e34c26 ;"></i><span>HTML5</span></li>
+                                <li class="list-inline-item"><i class="fab fa-css3-alt mx-1" style="color: #0d6efd ;"></i><span>CSS3</span></li>
+                                <li class="list-inline-item"><i class="fab fa-bootstrap mx-1" style="color: #6f42c1 ;"></i><span>Bootstrap</span></li>
+                                <li class="list-inline-item"><i class="fab fa-js mx-1" style="color: #ffc107 ;"></i><span>JavaScript</span></li>
+                                <li class="list-inline-item"><i class="fab fa-vuejs mx-1" style="color: #20c997  ;"></i><span>Vue JS</span></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="column col-sm-4 card">
-                        <div class="card-body skills">
-                            <img src="images/back-end.png" height="100">
-                            <h5 class="card-title skills-title">Back-end</h5>
-                            <p class="skills-text">I also do the back-end stuffs that is needed by my front-end components to be fully functional.</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Back-end technologies that I use:</p>
-                            <p>PHP</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Frameworks:</p>
-                            <ul class="list-unstyled">
-                                <li>Laravel</li>
+                            <p><i class="fas fa-cogs mt-3"></i><span class="ms-1"><strong>Back-end</strong></span></p>
+                            <ul class="list-inline list-unstyled h5 ms-2" style="margin-top: -1%;">
+                                <li class="list-inline-item"><i class="fab fa-php mx-1" style="color: #6f42c1  ;"></i><span>PHP</span></li>
+                                <li class="list-inline-item"><i class="fab fa-laravel mx-1" style="color: #fb503b ;"></i><span>Laravel</span></li>
+                                <li class="list-inline-item"><i class="fab fa-node mx-1" style="color: #3c873a ;"></i><span>Node JS</span></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="column col-sm-4 card">
-                        <div class="card-body skills">
-                            <img src="images/database.png" height="100">
-                            <h5 class="card-title skills-title">DBMS</h5>
-                            <p class="skills-text">And I also do the design of the database to avoid data redundancy and to have data integrity.</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Database that I use:</p>
-                            <p>MS SQL, MySQL</p>
-                            <p class="bold-text" style="color: dodgerblue; margin-top: 3rem;">Software tools:</p>
-                            <ul class="list-unstyled">
-                                <li>phpMyAdmin</li>
-                                <li>GitHub</li>
-                                <li>GitLab</li>
-                            </ul>
+                            <p><i class="far fa-id-card mt-3"></i><span class="ms-1"><strong>More about me:</strong></span></p>
+                            <span class="mb-2 ms-3" style="margin-top: -2%;">I'm a degree holder of Bachelor of Science in Information Technology. I'm a full stack software engineer at HRD Singapore Pte. Ltd., I design, develop and maintain in-house systems and database. You can check my CV <a href="Resume.pdf" target="_blank" class="text-dark"><strong>here</strong></a>.</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Experience -->
-            <div class="row-blue">
-                <div class="row shadow-lg card-group my-1 experience-animation show-on-scroll" style="margin-right: 10%; margin-left: 10%;">
-                    <div class="column col-sm-3 card text-center">
-                        <div class="card-body">
-                            <span class="bold-text h5" style="color: dodgerblue;">Experience</span>
-                        </div>
-                    </div>
-                    <div class="column col-sm-9 card">
-                        <div class="card-body">
-                            <div class="row job-experience">
-                                    <div class="column col-sm-8">
-                                        <p class="bold-text">Programmer</p>
-                                        <p class="job-company"><a href="http://www.hrd-s.com/index.html" target="_blank">HRD Singapore PTE. LTD.</a></p>
-                                    </div>
-                                    <div class="column col-sm-4">
-                                        <p class="job-date">July 2019 - Present</p>
-                                    </div>
-                            </div>
-                            <div class="row job-experience">
-                                <div class="column col-sm-8">
-                                    <p class="bold-text">Content Analyst</p>
-                                    <p class="job-company"><a href="https://www.spi-global.com/" target="_blank">SPi Global</a></p>
-                                </div>
-                                <div class="column col-sm-4">
-                                    <p class="job-date">March 2016 - March 2019</p>
-                                </div>
-                        </div>
-                        <div class="row job-experience">
-                            <div class="column col-sm-8">
-                                <p class="bold-text">Research Specialist</p>
-                                <p class="job-company"><a href="https://www.taskus.com/ph-taskus/" target="_blank">TaskUs</a></p>
-                            </div>
-                            <div class="column col-sm-4">
-                                <p class="job-date">March 2015 - February 2016</p>
-                            </div>
-                    </div>
-                    <!-- Resume -->
-                    <div class="row job-experience">
-                        <div class="column col-sm-8">
-                            <p class="bold-text"><a href="Resume.pdf" target="_blank" class="text-dark">View my resume <img src="images/resume.png" height="20"></a></p>
-                        </div>
-                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
             <!-- Footer -->
             <div class="footer">
-                <div class="row bold-text" style="margin-bottom: -3rem;">
-                    <div class="col-sm-3">
-                        <p>Created by</p>
-                        <p style="margin-top: -1rem;">Charnel Clamosa &copy 2020</p>
+                <div class="row">
+                    <div class="col my-auto">
+                        <p class="text-light"><strong>Charnel Clamosa &copy <span id="year"></span></strong></p>
                     </div>
-                    <div class="col-sm-9">
-                        <p class="footer-links">
-                            <a href="mailto:charnel.clamosa16@gmail.com" class="link-spacing">E-mail</a>
-                            <a href="https://github.com/charnelclamosa" target="_blank" class="link-spacing">GitHub</a>
-                            <a href="https://www.linkedin.com/in/charnel-clamosa-469aab141/" target="_blank" class="link-spacing">LinkedIn</a>
+                    <div class="col">
+                        <p class="text-end">
+                            <a href="mailto:charnel.clamosa16@gmail.com"><i class="bi bi-envelope text-light fs-1"></i></a>
+                            <a href="https://github.com/charnelclamosa" target="_blank"><i class="bi bi-github text-light fs-1 mx-3"></i></a>
+                            <a href="https://www.linkedin.com/in/charnel-clamosa-469aab141/" target="_blank"><i class="bi bi-linkedin text-light fs-1"></i></a>
                         </p>
                     </div>
                 </div>

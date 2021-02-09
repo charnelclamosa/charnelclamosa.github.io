@@ -49,3 +49,10 @@ function scrollTrigger() {
 function goTop() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+function getYear() {
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById('year').innerHTML = year;
+}
+getYear();
