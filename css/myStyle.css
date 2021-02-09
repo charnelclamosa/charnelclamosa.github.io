@@ -33,16 +33,20 @@ a {
       font-size : 10px;
     }
  }
-.dark-row {
+.about-section {
 	background-color: ghostwhite;
+	padding: 65px 10px;
+    min-height: 100vh;
 	-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 	clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-	padding: 65px 10px;
 }
-.light-row {
+.landing-section {
     padding: 100px 10px;
-    min-height: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 }
 .my-1 {
     margin-top: 1%;
@@ -53,35 +57,28 @@ a {
     margin-left: 5%;
     margin-right: 5%;
 }
-.footer-links {
-    margin-top: 1rem;
-    text-align: end;
-}
-.link-spacing {
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
 
 .back-to-top {
     cursor: pointer;
     display: none;
     position: fixed;
     z-index: 1;
-    bottom: 30px;
-    right: 10px;
+    bottom: 3%;
+    right: 2%;
 }
  .profile-picture {
-     border-radius: 50%;
-     display: inline-block;
-     position: relative;
-     width: 30%;
-     overflow: hidden;
-     z-index: 1;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    z-index: 1;
  }
 
  .about-first-card {
-     margin-top: -3%;
-     margin-left: 9.5%;
-     margin-right: 9.5%;
-     padding-top: 4%;
+    margin-top: -3%;
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+    padding-top: 4%;
  }
+
