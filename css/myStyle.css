@@ -22,6 +22,17 @@ a {
     50% { transform: rotate(  0.0deg); }
     100% { transform: rotate(  0.0deg); }
 }
+@media screen and (max-width: 420px){
+    body, span, h1, h5 {
+      font-size : 11px;
+    }
+ }
+ 
+ @media screen and (max-width: 320px){
+    body, span, h1, h5 {
+      font-size : 10px;
+    }
+ }
 .dark-row {
 	background-color: ghostwhite;
 	-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
