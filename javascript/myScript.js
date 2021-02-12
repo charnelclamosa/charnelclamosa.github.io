@@ -1,15 +1,20 @@
 // Transition
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
-// IE Fallback
-function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+    // IE Fallback
+    function(callback) { window.setTimeout(callback, 1000 / 60) };
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+const timeline = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+timeline.to(".intro-text", { y: "30%", duration: 0.5, stagger: 0.25 });
+timeline.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1.5 });
 
 function loop() {
-    Array.prototype.forEach.call(elementsToShow, function(element){
-    if (isElementInViewport(element)) {
-    element.classList.add('is-visible');
-    }
+    Array.prototype.forEach.call(elementsToShow, function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('is-visible');
+        }
     });
     scroll(loop);
 }
@@ -23,23 +28,21 @@ function isElementInViewport(el) {
     }
     var rect = el.getBoundingClientRect();
     return (
-        (rect.top <= 0
-        && rect.bottom >= 0)
-        ||
+        (rect.top <= 0 &&
+            rect.bottom >= 0) ||
         (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-        ||
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
         (rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
 }
 
 // Back to top button
 var myButton = document.getElementById('goTop');
-window.onscroll = function() {scrollTrigger()};
+window.onscroll = function() { scrollTrigger() };
 
 function scrollTrigger() {
-    if(document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         myButton.style.display = 'block';
     } else {
         myButton.style.display = 'none';
@@ -47,7 +50,7 @@ function scrollTrigger() {
 }
 
 function goTop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function getYear() {
