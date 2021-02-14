@@ -82,6 +82,10 @@ a {
     margin: -1rem 0;
 }
 
+.about-name h5 {
+    color: gray;
+}
+
 .about-content {
     display: grid;
     grid-auto-flow: column;
