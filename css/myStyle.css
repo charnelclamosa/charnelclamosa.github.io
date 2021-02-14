@@ -12,9 +12,37 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+nav {
+    min-height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: ghostwhite;
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+.nav-links li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#logo {
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: ghostwhite;
+    margin: 0.5rem 1rem;
+}
+
 .landing {
     min-height: 100vh;
-    padding: 0rem 5rem;
     background-color: rgb(51, 51, 51);
 }
 
@@ -24,37 +52,11 @@ main {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -40%);
 }
 
 .landing-intro h1 {
     font-size: 3rem;
-}
-
-nav {
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    color: ghostwhite;
-}
-
-.nav-links li {
-    padding-left: 2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-#logo {
-    font-family: 'Lexend Mega', sans-serif;
-    font-weight: lighter;
-    font-size: 1.5rem;
-    color: ghostwhite;
 }
 
 a {
@@ -198,7 +200,7 @@ a {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 414px) {
     body,
     span,
     h5,
@@ -206,16 +208,75 @@ a {
     p {
         font-size: 11px;
     }
+    .landing-intro h1 {
+        font-size: 2rem;
+    }
 }
 
-@media screen and (max-width: 320px) {
-    body,
-    span,
-    h5,
-    h6,
-    i,
-    li,
-    p {
-        font-size: 10px;
+@media screen and (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        margin: 5px;
+    }
+    nav {
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 2.5%;
+        transform: translate(-5%, -2.5%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: absolute;
+        padding: 5rem 0;
+        background-color: rgb(123, 123, 123);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        justify-content: space-between;
+    }
+    .nav-links.open {
+        clip-path: circle(1200px at 50% -20%);
+        -webkit-clip-path: circle(1200px at 90% -20%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li.fade {
+        opacity: 1;
+    }
+    .about-content {
+        display: list-item;
+        list-style: none;
+    }
+    .about-technologies {
+        margin: 0.5rem 0;
     }
 }

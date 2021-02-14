@@ -1,14 +1,22 @@
 // Transition
 // Detect request animation frame
-var scroll = window.requestAnimationFrame ||
-    // IE Fallback
-    function(callback) { window.setTimeout(callback, 1000 / 60) };
+var scroll = window.requestAnimationFrame || function(callback) { window.setTimeout(callback, 1000 / 60) };
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
-
 const timeline = gsap.timeline({ defaults: { ease: "power1.out" } });
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    links.forEach(link => {
+        link.classList.toggle('fade')
+    });
+});
 
 timeline.to(".intro-text", { y: "30%", duration: 0.5, stagger: 0.25 });
 timeline.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1.5 });
+
 
 function loop() {
     Array.prototype.forEach.call(elementsToShow, function(element) {
