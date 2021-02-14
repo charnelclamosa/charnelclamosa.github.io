@@ -228,6 +228,12 @@ a {
         z-index: 2;
         height: 100vh;
     }
+    .about-section.hide {
+        display: none;
+    }
+    .footer.hide {
+        display: none;
+    }
     .hamburger {
         position: absolute;
         cursor: pointer;

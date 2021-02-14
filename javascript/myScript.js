@@ -6,9 +6,13 @@ const timeline = gsap.timeline({ defaults: { ease: "power1.out" } });
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
+const about = document.querySelector('.about-section');
+const footer = document.querySelector('.footer');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+    about.classList.toggle('hide');
+    footer.classList.toggle('hide');
     links.forEach(link => {
         link.classList.toggle('fade')
     });
