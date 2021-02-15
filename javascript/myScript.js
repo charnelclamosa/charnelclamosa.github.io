@@ -3,6 +3,7 @@
 var scroll = window.requestAnimationFrame || function(callback) { window.setTimeout(callback, 1000 / 60) };
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 const timeline = gsap.timeline({ defaults: { ease: "power1.out" } });
+gsap.registerPlugin(ScrollTrigger);
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
@@ -20,6 +21,13 @@ hamburger.addEventListener('click', () => {
 
 timeline.to(".intro-text", { y: "30%", duration: 0.5, stagger: 0.25 });
 timeline.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1.5 });
+gsap.from(".scroll", {
+    scrollTrigger: { trigger: ".scroll", start: 'top 80%', toggleActions: "restart none none reset" },
+    y: 50,
+    stagger: 0.5,
+    duration: 1,
+    ease: 'power1.in'
+});
 
 
 function loop() {
@@ -54,7 +62,7 @@ var myButton = document.getElementById('goTop');
 window.onscroll = function() { scrollTrigger() };
 
 function scrollTrigger() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         myButton.style.display = 'block';
     } else {
         myButton.style.display = 'none';
