@@ -149,7 +149,8 @@ a {
     display: flex;
     min-height: 10vh;
     width: 100%;
-    padding: 0 5rem;
+    padding: 0 4rem;
+    margin: 0;
     align-items: center;
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
     background-blend-mode: multiply;
@@ -232,6 +233,11 @@ a {
 }
 
 @media screen and (max-width: 414px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body,
     span,
     h5,
@@ -245,6 +251,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     #logo {
         display: none;
     }
@@ -259,38 +270,44 @@ a {
         z-index: 2;
         height: 100vh;
     }
-    .about-section.hide {
-        display: none;
+    .footer {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
     }
-    .footer.hide {
-        display: none;
+    .footer-links {
+        margin: 0;
+        width: 40%;
+    }
+    #credits {
+        font-size: 11px;
     }
     .hamburger {
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: 2.5%;
-        transform: translate(-5%, -2.5%);
+        top: 5%;
+        transform: translate(-5%, 5%);
         z-index: 2;
     }
     .nav-links {
-        position: absolute;
-        padding: 5rem 0;
+        position: fixed;
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
         background-blend-mode: multiply, multiply;
         height: 100vh;
         width: 100%;
+        margin-left: -22%;
+        padding: 5rem 0;
         flex-direction: column;
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -20%);
+        align-items: center;
+        clip-path: circle(100px at 100% -20%);
+        -webkit-clip-path: circle(100px at 100% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
-        align-items: center;
-        justify-content: space-between;
     }
     .nav-links.open {
-        clip-path: circle(1200px at 50% -20%);
-        -webkit-clip-path: circle(1200px at 90% -20%);
+        clip-path: circle(1000px at 100% -20%);
+        -webkit-clip-path: circle(1000px at 100% -20%);
         pointer-events: all;
     }
     .nav-links li {

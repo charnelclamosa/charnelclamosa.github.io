@@ -12,8 +12,6 @@ const footer = document.querySelector('.footer');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
-    about.classList.toggle('hide');
-    footer.classList.toggle('hide');
     links.forEach(link => {
         link.classList.toggle('fade')
     });
