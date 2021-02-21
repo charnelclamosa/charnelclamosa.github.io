@@ -17,6 +17,13 @@ hamburger.addEventListener('click', () => {
     });
 });
 
+navLinks.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    links.forEach(link => {
+        link.classList.toggle('fade')
+    });
+});
+
 timeline.to(".intro-text", { y: "30%", duration: 0.5, stagger: 0.25 });
 timeline.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1.5 });
 gsap.from(".scroll", {

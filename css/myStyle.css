@@ -66,6 +66,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .about-header {
