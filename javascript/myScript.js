@@ -12,16 +12,10 @@ const footer = document.querySelector('.footer');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
-    links.forEach(link => {
-        link.classList.toggle('fade')
-    });
 });
 
 navLinks.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    links.forEach(link => {
-        link.classList.toggle('fade')
-    });
+    navLinks.classList.toggle('open');
 });
 
 timeline.to(".intro-text", { y: "30%", duration: 0.5, stagger: 0.25 });

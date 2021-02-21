@@ -306,9 +306,6 @@ a {
         -webkit-clip-path: circle(1000px at 100% -20%);
         pointer-events: all;
     }
-    .nav-links li {
-        opacity: 0;
-    }
     .nav-links li a {
         font-size: 25px;
     }
